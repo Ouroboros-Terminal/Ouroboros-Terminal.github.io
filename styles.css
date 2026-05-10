@@ -2,6 +2,7 @@ body {
   margin: 0;
   background: black;
   text-align: left;
+  font-family: 'VT323', monospace
 }
 
 h1 {
