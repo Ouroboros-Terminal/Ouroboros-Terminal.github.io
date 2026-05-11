@@ -13,7 +13,7 @@
 
   <button onclick="checkAnswer()">Submit</button>
 
-  <p id="response">CORRECT: YOU FOUND A CLUE: NOW WEAVE IT INTO THE REST OF THE PIECES</p>
+  <p id="response"></p>
 
   <script>
         function checkAnswer() {
@@ -21,9 +21,9 @@
             let response = document.getElementById("response");
 
         if (userAnswer.toUpperCase() === "MOTHER SOUL") {
-                response.textContent = "Correct answer.";
+                response.textContent = "CORRECT ANSWER: YOU FOUND A CLUE: NOW WEAVE IT INTO THE REST OF THE PIECES";
             } else {
-                response.textContent = "Incorrect answer.";
+                response.textContent = "INCORRECT ANSWER";
             }
         }
   </script>
