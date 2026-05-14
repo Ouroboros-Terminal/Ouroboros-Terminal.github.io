@@ -6,6 +6,27 @@
   <title>Document</title>
 </head>
 <body>
-  <p>testing</p>
+  <h1>DEUS EX MACHINA</h1>
+  <p></p>
+  
+  <input type="text" id="answer" placeholder="Enter your answer">
+
+  <button onclick="checkAnswer()">FINAL ANSWER?</button>
+
+  <p id="response"></p>
+
+  <script>
+        function checkAnswer() {
+            let userAnswer = document.getElementById("answer").value;
+            let response = document.getElementById("response");
+
+        if (userAnswer.toUpperCase() === "") {
+                response.textContent = "";
+            } else {
+                response.textContent = "INCORRECT ANSWER";
+            }
+        }
+  </script>
+  
 </body>
 </html>
