@@ -21,6 +21,11 @@
             let response = document.getElementById("response");
 
         if (userAnswer.toUpperCase() === "MOTHER SOUL") {
+
+            localStorage.setItem("the-empress", "DECRYPTED");
+
+            window.location.href = "index.html";
+          
                 response.textContent = "CORRECT ANSWER: YOU FOUND A CLUE: NOW WEAVE IT INTO THE REST OF THE PIECES";
             } else {
                 response.textContent = "INCORRECT ANSWER";
