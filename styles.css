@@ -17,13 +17,13 @@ p {
   color: orange;
 }
 
-#progress-container {
+#DECRYTION\ CONTAINER {
     width: 100%;
     height: 20px;
     border: 1px solid #00ff88;
 }
 
-#progress-bar {
+#FILE\ DECRYPTIONS\ COMPLETED {
     height: 100%;
     width: 0%;
     background: #00ff88;
