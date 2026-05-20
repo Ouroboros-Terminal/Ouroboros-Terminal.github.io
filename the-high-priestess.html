@@ -21,6 +21,11 @@
             let response = document.getElementById("response");
 
         if (userAnswer.toUpperCase() === "BLUE+MELODIES+COLLIDES+AGAINST+MARKINGS+MADE+TYRANNY/THREE+BECOMING+SEPARATED/TWO+BEING+REUNITED/ONE+LEFT+TO+REMEMBER+OLD+MEMORIES") {
+
+            localStorage.setItem("the-high-priestess", "DECRYPTED");
+
+            window.location.href = "index.html";
+          
                 response.textContent = "WELL AREN'T YOU JUST A SMART ONE? DID YOU SOLVE IT AS INTENDED OR DID YOU JUST CHEAT YOUR WAY THROUGH? REGARDLESS YOU FOUND A CLUE, SO MAKE USE OF IT OR THIS PUZZLE WAS FOR NOTHING. NOW LEAVE.";
             } else {
                 response.textContent = "INCORRECT, IS IT THAT HARD FOR YOU TO FIND THE ANSWER? THAT'S JUST SAD, NOW TRY AGAIN";
