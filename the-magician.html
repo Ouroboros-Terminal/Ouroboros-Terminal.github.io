@@ -13,14 +13,14 @@
 
   <button onclick="checkAnswer()">Окончательный ответ?</button>
 
-  <p id="response">Подсказка тебе, товарищ: дорога, ведущая к светлому будущему.</p>
+  <p id="response"></p>
 
   <script>
         function checkAnswer() {
             let userAnswer = document.getElementById("answer").value;
             let response = document.getElementById("response");
 
-        if (userAnswer.toUpperCase() === "PATHWAY TOWARD LIGHT") {
+        if (userAnswer.toUpperCase() === "HUMAN MIND") {
                 response.textContent = "Твой верный товарищ // Теперь мы расстанемся // Используй это во благо";
             } else {
                 response.textContent = "Неправильный ответ";
