@@ -7,33 +7,46 @@
 </head>
 <body>
   <h1>Ouroboros-Terminal</h1>
-  <h3>Перенаправление языкового модуля... TERMINAL ACCESS GRANTED//WELCOME USER//I AM [RASPUTIN]//THIS TERMINAL IS TO BE THE MAIN HUB TO SOLVE THE RIDDLE YOUR FRIEND HAS GIVEN YOU:|AVAILABLE FILES FROM DECRYPTED SIGNAL|</h3>
-  <p><a href="the-fool.html">The-Fool-File</a></p>
-  <p><a href="the-magician.html">The-Magician-File</a></p>
-  <p><a href="the-high-priestess.html">The-High-Priestess-File</a></p>
-  <p><a href="the-empress.html">The-Empress-File</a></p>
-  <p><a href="the-emperor.html">The-Emperor-File</a></p>
-  <p>[FILE CORRUPTED]</p>
-  <p>[FILE CORRUPTED]</p>
-  <p>[FILE CORRUPTED]</p>
-  <p>[FILE CORRUPTED]</p>
-  <p>[FILE CORRUPTED]</p>
-  <p>[FILE CORRUPTED]</p>
-  <p>[FILE CORRUPTED]</p>
-  <p>[FILE CORRUPTED]</p>
-  <p>[FILE CORRUPTED]</p>
-  <p>[FILE CORRUPTED]</p>
-  <p>[FILE CORRUPTED]</p>
-  <p>[FILE CORRUPTED]</p>
-  <p>[FILE CORRUPTED]</p>
-  <p>[FILE CORRUPTED]</p>
-  <p>[FILE CORRUPTED]</p>
-  <p>[FILE CORRUPTED]</p>
-  <p>[FILE CORRUPTED]</p>
-  <p>SECURITY ACCESS: BETA</p>
-  <p>UNKOWN DATA DETECTION SYSTEM//OFFLINE//</p>
   <div id="progress-container">
     <div id="progress-bar"></div>
 </div>
+  <h3>Перенаправление языкового модуля... TERMINAL ACCESS GRANTED//WELCOME USER//I AM [RASPUTIN]//THIS TERMINAL IS TO BE THE MAIN HUB TO SOLVE THE RIDDLE YOUR FRIEND HAS GIVEN YOU:|AVAILABLE FILES FROM DECRYPTED SIGNAL|</h3>
+  1<p><a href="the-fool.html">The-Fool-File</a></p>
+  2<p><a href="the-magician.html">The-Magician-File</a></p>
+  3<p><a href="the-high-priestess.html">The-High-Priestess-File</a></p>
+  4<p><a href="the-empress.html">The-Empress-File</a></p>
+  5<p><a href="the-emperor.html">The-Emperor-File</a></p>
+  6<p>[FILE CORRUPTED]</p>
+  7<p>[FILE CORRUPTED]</p>
+  8<p>[FILE CORRUPTED]</p>
+  9<p>[FILE CORRUPTED]</p>
+  10<p>[FILE CORRUPTED]</p>
+  11<p>[FILE CORRUPTED]</p>
+  12<p>[FILE CORRUPTED]</p>
+  13<p>[FILE CORRUPTED]</p>
+  14<p>[FILE CORRUPTED]</p>
+  15<p>[FILE CORRUPTED]</p>
+  16<p>[FILE CORRUPTED]</p>
+  17<p>[FILE CORRUPTED]</p>
+  18<p>[FILE CORRUPTED]</p>
+  19<p>[FILE CORRUPTED]</p>
+  20<p>[FILE CORRUPTED]</p>
+  21<p>[FILE CORRUPTED]</p>
+  22<p>[FILE CORRUPTED]</p>
+  <p>SECURITY ACCESS: BETA</p>
+  <p>UNKOWN DATA DETECTION SYSTEM//OFFLINE//</p>
+  <script>
+const totalFiles = 21;
+
+const solved = [
+    localStorage.getItem("the-magician"),
+    localStorage.getItem("the-high-priestess"),
+    localStorage.getItem("the-empress"),
+    localStorage.getItem("the-emperor")
+].filter(v => v === "DECRYPTED").length;
+
+document.getElementById("FILE-DECRYPTIONS COMPLETED").style.width =
+    (solved / totalFiles) * 100 + "%";
+</script>
 </body>
 </html>
