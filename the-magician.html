@@ -21,6 +21,9 @@
             let response = document.getElementById("response");
 
         if (userAnswer.toUpperCase() === "HUMAN MIND") {
+
+            localStorage.setItem("the-magician", "solved");
+          
                 response.textContent = "Твой верный товарищ // Теперь мы расстанемся // Используй это во благо";
             } else {
                 response.textContent = "Неправильный ответ";
