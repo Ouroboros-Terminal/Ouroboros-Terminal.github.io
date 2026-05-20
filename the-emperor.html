@@ -19,5 +19,25 @@ And on the pedestal these words appear:
 "My name Is Ozymandias, KiNg of Kings:
 Look on my works, ye MiGhty, and despair!"
 BUT UNLIKE THAT FAKE & THE MANY FALLEN KINGS BEFORE HIM, HE WOULD RAGE AGAINST THE WORLD, BRANDING EVERY ONE OF THEM, CURSING THEIR BLOOD, CARVING A PURE FORM OF ORDER, ONLY WHISPER THE NAME, AND HE WILL RETURN WITH WRATH HOTTER THAN THE SUN, WHAT WAS HIS NAME?</p>
+
+<input type="text" id="answer" placeholder="Enter your answer">
+
+  <button onclick="checkAnswer()">FINAL ANSWER?</button>
+
+  <p id="response"></p>
+
+  <script>
+        function checkAnswer() {
+            let userAnswer = document.getElementById("answer").value;
+            let response = document.getElementById("response");
+
+        if (userAnswer.toUpperCase() === "BRANDED KING") {
+                response.textContent = "WAS IT EASY? THEN BE PRIDEFUL OD THIS SIMPLE WIN";
+            } else {
+                response.textContent = "ARE YOU REALLY THIS DUMB?";
+            }
+        }
+  </script>
+  
 </body>
 </html>
