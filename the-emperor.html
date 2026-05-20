@@ -18,7 +18,7 @@ The hand that mocKed them and the heart that fed:
 And on the pedestal these words appear:
 "My name Is Ozymandias, KiNg of Kings:
 Look on my works, ye MiGhty, and despair!"
-BUT UNLIKE THAT FAKE & THE MANY FALLEN KINGS BEFORE HIM, HE WOULD RAGE AGAINST THE WORLD, BRANDING EVERY ONE OF THEM, CURSING THEIR BLOOD, CARVING A PURE FORM OF ORDER, ONLY WHISPER THE NAME, AND HE WILL RETURN WITH WRATH HOTTER THAN THE SUN, WHAT WAS HIS NAME?</p>
+BUT UNLIKE THAT FAKE & THE MANY FALLEN KINGS BEFORE HIM, I WOULD RAGE AGAINST THE WORLD, BRANDING EVERY ONE OF THEM, CURSING THEIR BLOOD, CARVING A PURE FORM OF ORDER, ONLY WHISPER THE NAME, AND I WILL RETURN WITH WRATH HOTTER THAN THE SUN, WHAT WAS MY NAME?</p>
 
 <input type="text" id="answer" placeholder="Enter your answer">
 
@@ -32,6 +32,11 @@ BUT UNLIKE THAT FAKE & THE MANY FALLEN KINGS BEFORE HIM, HE WOULD RAGE AGAINST T
             let response = document.getElementById("response");
 
         if (userAnswer.toUpperCase() === "BRANDED KING") {
+
+            localStorage.setItem("the-emperor", "DECRYPTED");
+
+            window.location.href = "index.html";
+          
                 response.textContent = "WAS IT EASY? THEN BE PRIDEFUL OF THIS SIMPLE WIN";
             } else {
                 response.textContent = "ARE YOU REALLY THIS DUMB?";
