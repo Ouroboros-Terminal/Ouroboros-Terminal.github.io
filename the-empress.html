@@ -24,7 +24,9 @@
 
             localStorage.setItem("the-empress", "DECRYPTED");
 
-            window.location.href = "index.html";
+            setTimeout(() => {
+               window.location.href = "index.html";
+            }, 5000);
           
                 response.textContent = "CORRECT ANSWER: YOU FOUND A CLUE: NOW WEAVE IT INTO THE REST OF THE PIECES";
             } else {
