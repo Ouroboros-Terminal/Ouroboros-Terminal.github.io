@@ -24,7 +24,9 @@
 
             localStorage.setItem("the-magician", "DECRYPTED");
 
-            window.location.href = "index.html";
+           setTimeout(() => {
+               window.location.href = "index.html";
+           }, 10000);
           
                 response.textContent = "Твой верный товарищ // Теперь мы расстанемся // Используй это во благо";
             } else {
